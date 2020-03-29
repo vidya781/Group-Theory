@@ -38,97 +38,84 @@ Consider the following figure :
       Since symmetries are rigid motions, one sees that the position of ordered pair of vertices (1,2) have been specified, action 
       of symmetry on all the remaining vertices is completely determined. Thus there are exactly 2n symmetries of regular n-gons.
       
-      Consider a unit square whose centre is (0,0) and lines y = x and y = - x are the diagonals
-      As a general rule, if n is even, there are n/2 lines of symmetry which pass through 2 opposite vertices ( these 2 lines thus 
-      form the diagonals) , lets call them l1 and l2 , l3 and l4 pass through mid point of opposite sides. Thus y = x, y = -x
-      , x = 0 and y = 0 are the 4 lines about which rotation or reflection could take place.
+Consider a unit square whose centre is (0,0) and lines y = x and y = - x are the diagonals. As a general rule, if n is even, there are n/2 lines of symmetry which pass through 2 opposite vertices ( these 2 lines thus form the diagonals) , lets call them l1 and l2 , l3 and l4 pass through mid point of opposite sides. Thus y = x, y = -x, x = 0 and y = 0 are the 4 lines about which rotation or reflection could take place.
       
-      We note down the following rules some of which we will prove:
+We note down the following rules some of which we will prove:
       
-      1) The group elements are defined by 1, r, r^2, r^3.....r^(n-1), that is a point could be rotated by the cental angle, then 
-      rotated one more time , ( r^2),. and from that point could be rotated once more to give r^3 and by series of pure rotations be
-      brought back to the initial configuration. This in essence is what constitutes these set of points.
-      So in case of D6 which stands for a regular hexagon, we have 2n = 6, => n = 3, so {1,r,r^2} are the set of points which consitute
-      the rotational symmetry points.
-        ord(r) = n, => | r | ^ n = 1
+1) The group elements are defined by 1, r, r^2, r^3.....r^(n-1), that is a point could be rotated by the cental angle, then 
+rotated one more time , ( r^2),. and from that point could be rotated once more to give r^3 and by series of pure rotations be brought back to the initial configuration. This in essence is what constitutes these set of points.
+So in case of D6 which stands for a regular hexagon, we have 2n = 6, => n = 3, so {1,r,r^2} are the set of points which consitute the rotational symmetry points.
+ord(r) = n, => | r | ^ n = 1
         
-      2) |s| = 2, and this is easy to explain : Point on the mid point of one side of the square must be reflected 2 times across the 
-      Y axis to bring it back to the same place. The same is true of reflection across the X axis as well and hence |s| = 2 
+ 2)|s| = 2, and this is easy to explain : Point on the mid point of one side of the square must be reflected 2 times across the Y axis to bring it back to the same place. The same is true of reflection across the X axis as well and hence |s| = 2 
       
-      3) s =/= r ^ i for every i         ( =/=. indicates not equal to)
+ 3) s =/= r ^ i for every i         ( =/=. indicates not equal to)
       
-      4) sr^i =/= sr^j for all 0 <= i, j <= (n-1) where i =/= j
-         Since we can have rotation combined with reflection, we have the entire D(2n) enumerated .
-        D(2n) = { 1,r,r^2,r^3.....r^(n-1),s,sr,sr^2,....sr^(n-1) }
-        Each element can be written uniquely in s^kr^i for k = 0, 1 and 0<= i<=(n-1)
+ 4) sr^i =/= sr^j for all 0 <= i, j <= (n-1) where i =/= j
+    Since we can have rotation combined with reflection, we have the entire D(2n) enumerated .
+    D(2n) = { 1,r,r^2,r^3.....r^(n-1),s,sr,sr^2,....sr^(n-1) }
+    Each element can be written uniquely in s^kr^i for k = 0, 1 and 0<= i<=(n-1)
         
-      5) sr = sr^(-1) also called s . r Inverse ( Inv(r)) ( we prove this shortly)
-         find out what permutation groups s effects on {1,2,.....n} and then work on the LHS and RHS separately to prove they yield 
-         the same point.It goes without saying that this set of operations deem it non abelian. sr^i in general not equal to r^i.s
+ 5) sr = sr^(-1) also called s . r Inverse ( Inv(r)) ( we prove this shortly)
+    find out what permutation groups s effects on {1,2,.....n} and then work on the LHS and RHS separately to prove they yield 
+    the same point.It goes without saying that this set of operations deem it non abelian. sr^i in general not equal to r^i.s
          
-      6) r^i . s = s r^(-i) 0<=i<=n and proceed by induction on i and r^(i+1). s = r (r^i) s # commuting s with powers of r
+ 6) r^i . s = s r^(-i) 0<=i<=n and proceed by induction on i and r^(i+1). s = r (r^i) s # commuting s with powers of r
       
-      7) Group of G is the identity element e and order of x in G is the smallest positive integer n such that x ^ n = e, 
-         ord(x) = n and if there is no such n, we say x has infinite order.( denoted by Inf) 
+ 7) Group of G is the identity element e and order of x in G is the smallest positive integer n such that x ^ n = e, 
+    ord(x) = n and if there is no such n, we say x has infinite order.( denoted by Inf) 
          
-         Now we begin with some elementary operations::
-         ---------------------------------------------
-         1) Find the order of each elements of D6
+   Now we begin with some elementary operations::
+   ---------------------------------------------
+   1) Find the order of each elements of D6
          
-         https://proofwiki.org/w/images/6/68/SymmetryGroupRegularHexagon.png
+      https://proofwiki.org/w/images/6/68/SymmetryGroupRegularHexagon.png
          
-         Refer to the image above. It should be obvious that alpha is r in this figure and we will go with this standard 
-         notation or r and s that we referred to earlier.
+      Refer to the image above. It should be obvious that alpha is r in this figure and we will go with this standard 
+      notation or r and s that we referred to earlier.
          
-         D6 = { 1,r,r^2,s,sr,sr^2 }.  ( n = 3, 2n = 6 )
-         r = clockwise rotation about the origin 2pi/n and s = reflection about the line of symmetry through vertex 1 and origin.
-         Clearly ord(1) = 1, 
+      D6 = { 1,r,r^2,s,sr,sr^2 }.  ( n = 3, 2n = 6 )
+      r = clockwise rotation about the origin 2pi/n and s = reflection about the line of symmetry through vertex 1 and origin.
+      Clearly ord(1) = 1, 
          
-         Ord(r) = 3 Why ? Consider the figure in the link above and notice the geometric intuition that builds up. A is rotate in 
-         the anticlockwise direction to get B which by rotation again in the same direction reaches C which by rotational action 
-         again reaches D. Now imagine 'holding ' D and rotating the whole figure about D. Using D as the pivot, take A to the opposite 
-         side of D . Instead of being on the right side of D when we started out, it lies on the left side of D. This figure that we
-         have obtained by these series of operations would be indistinguishable from the original geometric figure and hence since
-         we carried out 3 operations to establish identity, we say ord(r) = 3 or  |r| = 3 
-         Algebraically we have this : we know intuitively that |r| =/= 1. Also r^3 = 1 and hence |r| <= 3, also we see that |r| =/= 2
-         as otherwise 1 = r^3 = r^2.r = r. Hence |r|= 3
+Ord(r) = 3 Why ? Consider the figure in the link above and notice the geometric intuition that builds up. A is rotate in 
+the anticlockwise direction to get B which by rotation again in the same direction reaches C which by rotational action 
+again reaches D. Now imagine 'holding ' D and rotating the whole figure about D. Using D as the pivot, take A to the      opposite side of D . Instead of being on the right side of D when we started out, it lies on the left side of D. This figure that we have obtained by these series of operations would be indistinguishable from the original geometric figure and hence since we carried out 3 operations to establish identity, we say ord(r) = 3 or  |r| = 3 
+Algebraically we have this : we know intuitively that |r| =/= 1. Also r^3 = 1 and hence |r| <= 3, also we see that |r| =/= 2 as otherwise 1 = r^3 = r^2.r = r. Hence |r|= 3
          
-         Ord(r^2) = 3. Again Geometric motivation : From Point A to C is r^2 . Do that 2 more times in succession to get to A again.
-         Since r^2 must be repeated for a total of 3 times to get to the starting point A, we say ord(r^2) = 3 , |r^2| = 3.
-         Algebraically : r^2 =/= 1, so |r^2| =/= 1, (r^2)^2 = r^4 = (r^3).r = r =/= 1 and hence |r^2| != 2, (r^2)^3 = r^6 = r^3. r^3
-         = 1. 1,and thus |r^2| = 3
+Ord(r^2) = 3. Again Geometric motivation : From Point A to C is r^2 . Do that 2 more times in succession to get to A again.
+ Since r^2 must be repeated for a total of 3 times to get to the starting point A, we say ord(r^2) = 3 , |r^2| = 3.
+ Algebraically : r^2 =/= 1, so |r^2| =/= 1, (r^2)^2 = r^4 = (r^3).r = r =/= 1 and hence |r^2| != 2, (r^2)^3 = r^6 = r^3. r^3
+ = 1. 1,and thus |r^2| = 3
          
-         Ord(s) = 2, Geometrically , we know that s =/= 1 and hence |s| =/= 1 and hence |s|^2 = 1 as if we take point A and reflect 
-         it across the Y axis, it goes to the other side of Y axis ( left side) and reflected once more from over there, it comes to 
-         A again and hence |s|^2 = 1, also s = s^(-1)
+Ord(s) = 2, Geometrically , we know that s =/= 1 and hence |s| =/= 1 and hence |s|^2 = 1 as if we take point A and reflect 
+it across the Y axis, it goes to the other side of Y axis ( left side) and reflected once more from over there, it comes to 
+A again and hence |s|^2 = 1, also s = s^(-1)
          
-         Ord(sr) = 2, Geometrically, first a reflection and then a rotation of point A. If sr = 1, then s^-1. r = 1, and thus r = s. 
-         Thus r and s have different orders and thus this is not true. (sr)^2 = (sr).(sr) = s(rs)r = s(sr^-1)r = s^2 = 1. Hence |sr| = 2
-         A , when reflected across the Y axis, goes to D and then when rotated by the central angle, goes to C. The same set of actions,
-         bring it back to A, C becomes F and then F goes to A by the rotation after the reflection.
+Ord(sr) = 2, Geometrically, first a reflection and then a rotation of point A. If sr = 1, then s^-1. r = 1, and thus r = s. 
+Thus r and s have different orders and thus this is not true. (sr)^2 = (sr).(sr) = s(rs)r = s(sr^-1)r = s^2 = 1. Hence |sr| = 2
+A , when reflected across the Y axis, goes to D and then when rotated by the central angle, goes to C. The same set of actions, bring it back to A, C becomes F and then F goes to A by the rotation after the reflection.
          
-         Ord(sr^2) = 2. If sr^2 = 1, then r^2 = s ( as s = s^-1) but this is false because r^2 and s have different orders and 
-         thus |sr^2| =/= 1 . (sr^2)^2 = (sr^2)(sr^2) = s(r^2.s)r^2 = s(s.r^(-2)).r^2 = s^2 = 1. Hence |sr^2| = 2
-         Geometrically, we have the following A--> D--->C--->B ( therefore one reflection and 2 rotations ) take the point from A-> B
-         B ---> E and then to F and then to A after one reflection and 2 rotations.
-         Therefore |sr^2| = 2
+Ord(sr^2) = 2. If sr^2 = 1, then r^2 = s ( as s = s^-1) but this is false because r^2 and s have different orders and thus |sr^2| =/= 1 . (sr^2)^2 = (sr^2)(sr^2) = s(r^2.s)r^2 = s(s.r^(-2)).r^2 = s^2 = 1. Hence |sr^2| = 2
+Geometrically, we have the following A--> D--->C--->B ( therefore one reflection and 2 rotations ) take the point from A-> B
+B ---> E and then to F and then to A after one reflection and 2 rotations.
+Therefore |sr^2| = 2
          
-         Now we need a lemma on which we will base our further proofs :
+ Now we need a lemma on which we will base our further proofs :
          
-         To prove that srs^-1 = r^(-1) 
-         Refer to the following figure in order to flesh out this proof :
+ To prove that srs^-1 = r^(-1) 
+ Refer to the following figure in order to flesh out this proof :
             \
              \ ( B )                            We note that : r^-1(A) = B, s(A) = A, s(B) = B'
               |.        ^                                       s^-1(A) = A, r(A) = B , s(B) = B'
     ----------|(A) (s)   \  ( anticlockwise)                    The values of srs^(-1) and r^(-1) at A are (srs^-1) (A) 
               /                                                 RHS = r^(-1) = r^(-1)A = B'
              /                                                  LHS = srs^(-1) = sr s^(-1)A = sr(A) = s r(A) = s(B) = B'
-             B'.   /. ( Clockwise ).              Thus Since srs^-1 and r^-1 agree at A and at B, they agree on the polygon
-            /.    V                                anywhere, so generalising, we srs^-1 = r^(-1) and multiplying both sides
-                                                   on the right side of each component by s
-                                                    we get, srs^(-1)s = r^(-1)s, sr = r^(-1)s, => rs = sr^(-1) and what this
-                                                    essentially means is that, we can move r to the other side of s by inverting it
-                                                    in D(n).
+             B'.   /. ( Clockwise ).         Thus Since srs^-1 and r^-1 agree at A and at B, they agree on the polygon
+            /.    V                          anywhere, so generalising, we srs^-1 = r^(-1) and multiplying both sides
+                                             on the right side of each component by s,we get, srs^(-1)s = r^(-1)s,
+                                             sr = r^(-1)s, => rs = sr^(-1) and what this essentially means is that, 
+                                             we can move r to the other side of s by inverting it in D(n).
      By induction, sr^k = r^(-k) s, r^k (s) = sr ^(-k), every power of r can be moved to the other side of s by an inversion.
      
      1 = (r^k s)^ 2, = r^k s r^k s , => s r ^ k = r ^ (-k) s ^ (-1) , => sr ^ k = r ^(-k) s
@@ -136,9 +123,52 @@ Consider the following figure :
      We will now be using the results of this lemma in further proofs. 
      
      We now proceed to calculate the order of elements of D8 ( a regular octagon )
+       
+     Refer to the link below :
+     
+     https://en.wikipedia.org/wiki/Octagon
+     
+     D8 = { 1,r, r^2, r^3,s,sr,sr^2,sr^3 }
+     
+     | 1 | = 1
          
-         
+      | r | = 4, and we reason thus : Geometrically, we know that r =/= 1, and that r ^2 =/= 1. Hence |r| =/= 1 and 
+      | r ^ 2| =/= 1 but from the geometry we know that r^4  = 1 , so |r^4| <= 4 , so we can see that |r| =/= 3, because
+      r^4 = 1 = r^3.r and if |r| == 3, r^3 = 1, and this would mean r = 1 which is not true. Hence |r| = 4
       
+      We know that |r^2| =/= 1, but (r^2)^2 = r^4 = 1 and hence |r^2| = 2
+      
+      Also |r^3| =/= 1 . We can also see that |r^3| =/= 2 or 3, because (r^3)2 = r^6 = r^4.r^2 = r^2 =/= 1.and (r^3)3 = r^9
+      = r^4.r^4.r = r =/= 1 but (r^4)3 = r^12 = (r^3)4 = 1 . Hence | r ^3 | = 4
+      
+      Geometrically, we know that s =/= 1 and hence |s| =/= 1.Also like in case of D6, in D8 also we have that s^2 = 1,
+      |s | = 2.
+      
+      As |s| = 2, we see that s^ 2 = 1, and s = s ^(-1) and let us say that sr = 1. Then s^(-1)r = 1 and thus r = s, but
+      r and s have different orders and thus this is not true. (sr)^2 = (sr)(sr) = s (rs) r = s (s r^-1) r = s^2 = 1
+      Hence |sr| = 2.
+      
+      sr^2 = s =/= 1 and hence |sr^2| =/= 1. This is also clear from the geometry wherein after a reflection and two rotations       the point will not land back at the origin. (sr^2)2 = (sr^2)(sr^2) = s(r^2 s) r^2 = s (s r ^ -2) r^ 2 = s ^ 2 = 1 
+      Hence |sr^2| = 2
+      
+      sr^3 = sr^2.r = sr =/= 1 and hence |sr^3| =/= 1 so lets say (sr^3)2 = (sr^3)(sr^3) = s (r^3 s) r^ 3 = s (s r ^ -3) r ^ 3
+      = s ^ 2 = 1 and so | s r ^ 3 | = 2
+      
+     We now just proceed to list out the order of elements of D10 reasoning and enumerating just like in D6 and D8
+     
+     D10 = { 1,r, r^2, r^3, r^4, s, sr, sr^2, sr^3, sr^4 }
+     
+     |1| = 1
+     | r | = 5
+     | r^2 | = 5
+     | r^3 | = 5
+     | r^4 | = 5
+     | s | = 2
+     | sr| = 2
+     | sr^2| = 2
+     | sr^3| = 2
+     | sr^4| = 2
+     
          
          
         
