@@ -20,23 +20,26 @@ Consider the following figure :
           |.    original n-gon.
           |2
           /.   More specifically, we will be dealing with D6 and D8 which stand for a regular hexagon and octagon respectively.
-         /.    We will be extending the proofs to more general scenarios. Now we now that rotation about an angle is how the
-        /.     the movement of the end point can be effected. For example, if the angle is 2Pi/n, then the point can be moved
-         3.    about in a clockwise or anticlockwise direction. Thus the point is moved from i to i + 1
-               We also note that composition of functions is associative, hence binary functions are associative. We also define
-               the order of a group as the power to which that group point must be raised in order to retrieve back the same figure.
+         /.   
+        / 3
+         
+  We will be extending the proofs to more general scenarios. Now we now that rotation about an angle is how the
+  the movement of the end point can be effected. For example, if the angle is 2Pi/n, then the point can be moved
+  about in a clockwise or anticlockwise direction. Thus the point is moved from i to i + 1
+  We also note that composition of functions is associative, hence binary functions are associative. We also define
+  the order of a group as the power to which that group point must be raised in order to retrieve back the same figure.
                
-      Let us motivate with a clear example: 1 must be raised to 1 to get 1 or 1 must be raised to 0 to get 1, hence the order of
-      1 which is mathematically notated as | 1 | or ord(1) = 1
-      Similarly ord(2) = 0 and so on.
-      |D(2n) | = 2n  ( remember we are considering regular structures, so the power of 2 in the subscript. 
-      So |D2| = 2(1) = 2
-      If n = 2, |D(4)| = 4
-      We reiterate that for any given vertex i, there is a symmetry which sends the vertex 1 to position i and since vertex 2 is 
-      adjacent to vertex 1, vertex 2 must end up in i + 1 or i - 1 ( where we are considering clockwise naming conventions )
-      Thus there are 2n positions the ordered pair of vertices (1,2) may be sent to upon applying the symmetries.
-      Since symmetries are rigid motions, one sees that the position of ordered pair of vertices (1,2) have been specified, action 
-      of symmetry on all the remaining vertices is completely determined. Thus there are exactly 2n symmetries of regular n-gons.
+  Let us motivate with a clear example: 1 must be raised to 1 to get 1 or 1 must be raised to 0 to get 1, hence the order of
+  1 which is mathematically notated as | 1 | or ord(1) = 1
+  Similarly ord(2) = 0 and so on.
+  |D(2n) | = 2n  ( remember we are considering regular structures, so the power of 2 in the subscript. 
+   So |D2| = 2(1) = 2
+   If n = 2, |D(4)| = 4
+   We reiterate that for any given vertex i, there is a symmetry which sends the vertex 1 to position i and since vertex 2 is 
+   adjacent to vertex 1, vertex 2 must end up in i + 1 or i - 1 ( where we are considering clockwise naming conventions )
+   Thus there are 2n positions the ordered pair of vertices (1,2) may be sent to upon applying the symmetries.
+   
+Since symmetries are rigid motions, one sees that the position of ordered pair of vertices (1,2) have been specified,    action of symmetry on all the remaining vertices is completely determined. Thus there are exactly 2n symmetries of regular n-gons.
       
 Consider a unit square whose centre is (0,0) and lines y = x and y = - x are the diagonals. As a general rule, if n is even, there are n/2 lines of symmetry which pass through 2 opposite vertices ( these 2 lines thus form the diagonals) , lets call them l1 and l2 , l3 and l4 pass through mid point of opposite sides. Thus y = x, y = -x, x = 0 and y = 0 are the 4 lines about which rotation or reflection could take place.
       
@@ -57,8 +60,8 @@ ord(r) = n, => | r | ^ n = 1
     Each element can be written uniquely in s^kr^i for k = 0, 1 and 0<= i<=(n-1)
         
  5) sr = sr^(-1) also called s . r Inverse ( Inv(r)) ( we prove this shortly)
-    find out what permutation groups s effects on {1,2,.....n} and then work on the LHS and RHS separately to prove they yield 
-    the same point.It goes without saying that this set of operations deem it non abelian. sr^i in general not equal to r^i.s
+   find out what permutation groups s effects on {1,2,.....n} and then work on the LHS and RHS separately to prove they yield 
+  the same point.It goes without saying that this set of operations deem it non abelian. sr^i in general not equal to r^i.s
          
  6) r^i . s = s r^(-i) 0<=i<=n and proceed by induction on i and r^(i+1). s = r (r^i) s # commuting s with powers of r
       
