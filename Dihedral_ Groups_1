@@ -1,13 +1,13 @@
 The motivation :
 
 When we come across figures like triangles, squares and polygons we believe that it must be possible to rotate these figures
-in space and obtain back the same figure. We could also reflect the points that consitute these figures and study where the point
-falls in case it is reflected across a particular axis.
+in space and obtain back the same figure. We could also reflect the points that consitute these figures and study where the 
+pointfalls in case it is reflected across a particular axis.
 
 So naturally the question arises, can we have some kind of algebraic operations to correspond with these geometric actions of 
 rotating and reflecting. We can straightaway set up a notation like r for rotation and s for reflection. Where a point will 
-eventually land up as a result of these operations will depend on the sequence of operations ( relection then rotation, or rotation
-then reflection and any combination of these). This forms the very basis of what the entire study of dihedral groups is. 
+eventually land up as a result of these operations will depend on the sequence of operations ( relection then rotation, 
+or rotationthen reflection and any combination of these). This forms the very basis of what the entire study of dihedral groups. is. 
 
 Consider the following figure :
 
@@ -51,7 +51,8 @@ which rotation or reflection could take place.
 We note down the following rules some of which we will prove:
       
 1) The group elements are defined by 1, r, r^2, r^3.....r^(n-1), that is a point could be rotated by the cental angle, then 
-rotated one more time , ( r^2),. and from that point could be rotated once more to give r^3 and by series of pure rotations be brought back to the initial configuration. This in essence is what constitutes these set of points.
+rotated one more time , ( r^2),. and from that point could be rotated once more to give r^3 and by series of pure rotations 
+be brought back to the initial configuration. This in essence is what constitutes these set of points.
 So in case of D6 which stands for a regular hexagon, we have 2n = 6, => n = 3, so {1,r,r^2} are the set of points which
 consitute the rotational symmetry points.
 ord(r) = n, => | r | ^ n = 1
@@ -187,6 +188,7 @@ Therefore |sr^2| = 2
      | sr^4| = 2
      
          
-         
+  Kindly Note that since this is the first post in this topic, the post is titled Dihedral_Groups_1 and all subsequent posts
+  are numbered sequentially as the topics will scale in difficulty. 
         
       
