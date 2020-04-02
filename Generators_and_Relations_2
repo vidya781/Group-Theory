@@ -26,8 +26,8 @@ between elements of the group may be derived from these three intrinsically. Thi
 determine exactly when two group elements are equal by using only these three relations.
 
 Lets say there is a collection of relations R1, R2, R3... Rm ( here each Ri is an equation in the elements from S U { 1 } 
-such that any relation among the elements of S can be deduced from these , we call these generators and relations a presentation
-of G and depict this as G = < S | R1,R2,.....Rm>
+such that any relation among the elements of S can be deduced from these , we call these generators and relations a 
+presentation of G and depict this as G = < S | R1,R2,.....Rm>
 
 One presentation for the dihedral group D(2n) ( using the generators and relations above) 
 D(2n) = <r,s | r^n = s^2 = 1, rs = sr^(-1) >
