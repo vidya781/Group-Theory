@@ -1,0 +1,37 @@
+Continuing onward with some more problems from D&F , we pose the following problems:
+
+Find a set of generators for Z and a set of generators for Z/nZ
+
+In one case we have Z and if we take the realm of positive integers (+) , then we can easily see that 1 is the generator
+and every k in Z can be obtained by adding 1 or -1 to itself ( 1 to ascend, and -1 to descend). Thus formally we can 
+represent this by : k = { k = 1 + 1 + 1 + 1......+ 1    k > 0
+                               ---------------------
+                                      k times
+                          k 1 = 0                      k = 0
+                          |k|(-1) = -1 + -1 + .....+ -1 
+                                    --------------------    = k < 0
+                                        ( k times ) 
+                                        
+ In order to tackle the second part of the question, if we assume they mean Z/nZ as an additive group, with the usual definition
+ of addition on Z/nZ , then 1bar is a generator because for every kbar in Z/nZ, k1bar = kbar.1bar satisfying the relation n.1bar
+ = 0bar where 0bar is the identity element.
+ 
+ 
+ 
+ Show that the group < x1, y1 | x1^2 = y1^2 = (x1,y1)^2 = 1 > is the dihedral group D4 ( where x1 may be replaced by the 
+ letter r and y1 by s ) [ Show that the last relation is the same as x1y1 = x1 y1 ^(-1)]
+ 
+ Lets first write out D4 = {1,r,s,sr} and do a mapping x1 = r , y1 = s, we easily see that x1^2 = r^2 = 1 and y1^2 = s^2 = 1 
+ as per the rules and now lets form tuples like (1,r)
+                                                (r,s)
+                                                (s,sr) 
+  We have already seen that that the square relationship for the first 2 tuples hold good. 
+  Now for (s,sr) ^ 2 we see that s^2 = 1 and (sr)^2 = (sr)(sr) = s(rs)r = s(sr^-1)r = s^2 = 1 Thus the first part of the question
+  is proved.
+  
+  Also we have that rs = x1y1 = (x1y1)^-1  ( as x1 = x1^-1, y1 = y1^-1) 
+                              = y1^-1x1^-1 = y1 x1^-1 = sr^-1 
+  Thus r and s satisfy the relations on x1 and y1 and x1,y1 satisfy the relations for r and s.
+  
+  Now D4 = <r,s | r^2 = s^2 = 1 , rs = sr^-1 > = < x1, y1 | x1^2 = y1^2 = (x1,y1)^2 = 1 > 
+ 
