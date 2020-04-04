@@ -35,3 +35,45 @@ represent this by : k = { k = 1 + 1 + 1 + 1......+ 1    k > 0
   
   Now D4 = <r,s | r^2 = s^2 = 1 , rs = sr^-1 > = < x1, y1 | x1^2 = y1^2 = (x1,y1)^2 = 1 > 
  
+
+Let X2n be the group whose presentation is < x, y | x^n = y^2 = 1, xy = yx^2 >
+
+a) Show that n = 3k, then X2n has order 6, and it has the same generators and relations as D6 when x is replaced by r 
+and y by s
+b) Show that if (3,n) = 1 , then x satisfies the additional relation : x = 1 and in this case deduce that X2n has order 2
+( Use the facts x^n = 1 and x^3 = 1 )
+
+Solution :
+
+a)Taken from DF, X2n = <x,y | x^n = y^2 = 1, xy = yx^2 >
+
+The commutation relation xy = yx^2 determines how to commute y and x ( in real terms, this means moving y from the right of 
+x to the left ), so that just as in the group D2n every element in X2n can be written in the form y^kx^i with all the powers 
+of y on the left and all powers of x on the right. Also, by the first two relations any powers of x and y can be reduced so
+that i lies between 0 and n-1 and k is 0 or 1. We conjecture that the order of the group could be 2n but we see the following.
+
+1 = y^2,
+x = xy^2 = (xy)y = (yx^2) y = (yx)(xy) = (yx)(yx^2) = y(xy)x^2 = y(yx^2)x^2 = y^2x^4 = x^4
+
+Since x^4 = x it follows by the cancellation law, that x^3 = 1 in X(2n) and so it follows that X(2n) has order at most 6 for
+any n
+
+ Now, x^3 = 1
+ Multiplying by x^-1 on both sides
+ x^2 = x^-1
+ and so x^n = 1 
+ 
+ Now Lets take the case for D2n = <r,s | r^n = s^2 = 1, rs = sr^-1 > and for D6, we must have 2n = 6, so n = 3 and so r^3 = 1
+ and replacing r by x , we get x^3 = 1, y^2 = 1, xy = yx^-1
+ and these are the same relations as in D6 and since this representation defines D6 which is of order 6 , we therefore conclude
+ that this is the order of X2n
+ 
+ b) Suppose that (n,3) = 1, that is n is not divisible by 3 and n can be written as n = 3k +- 1 
+ Now using the facts that x^n = 1, and x^3 = 1, we get 1 = x^n = x^(3k +/- 1) = (x^3)k x ^(+/-) 1 = x ^(+/-) 1
+ if 1 = x ^ 1, x = 1 
+ if 1 = x^(-1) , left multiplying by x , x = x.x^(-1) = 1 
+ So in both cases, x = 1
+ Thus the group presentation, G = { y | y ^ 2 = 1 } , so G = { 1, y } ( we have not written x as x = 1) and the order this
+ group is 2.
+ 
+ 
