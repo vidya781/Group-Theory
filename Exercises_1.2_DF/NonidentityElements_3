@@ -1,0 +1,59 @@
+We proceed to look at some questions involving Non Identity elements :
+
+If n = 2k is even and n >= 4, show that z = r^k is an element of order 2 which commutes with all the elements of D(2n).
+Show also that z is the only non identity element of D(2n) which commutes with all elements of D(2n).
+
+Approaches and Proofs:
+---------------------
+
+Lets first write out D(2n) = { 1,r,r^2,....r^(n-1),sr,sr^2,....sr^(n-1) }
+D(4k) = {1,r,r^2,...r^(2k-1),sr,sr^2,.....sr^(2k-1) }
+
+We basically need to prove that | r^ k| ^2 = 1 so that ord(r^k) = 2
+
+Now, r^k =/= e so |r^k| > 1 but (r^k)^2 = r^2k = r^n = e
+
+To see why this is true: consider D(2n) = D(4k) and for some suitable k , say k = 2, we are in D8 so that n = 4 and after 4 
+rotations we obtain an identity, so we see r^n = e and so |r^k| <= 2, and taken together that |r^k| > 1 and |r^k| <= 2,
+|r^k| = 2 . This is is the first part of the proof.
+
+Lets take the second part: r^k commutes with all the elements of D(2n) , r^k x = x r^(-k)
+
+|r^k| = 2
+=> r^(-k) = r^(-1)k 
+          = r^(k)-1
+    (r^k)-1 = r^k
+    Since the inverse exists, r^k . x = x . r^k , this proves the commutativity aspect
+
+Now suppose that x = r^c for some integer c
+
+r^k . x = r^c . r^ k 
+=> r^k . x = r^(c + k)
+|r^k| = 2
+r^(-k) = (r^k)-1 = r ^ k
+Hence r^k . x = x . r^k
+If x = r^c for some integer c
+r^k. x = r^k . r^ c = r^(c + k) = r^c. r^k = x . r ^ k 
+                                           = x . r^(-k)
+                        Since |r^k| = 2, r^k = r^(-k)
+                        r^(-k) = (r^k)(-1) = r^k
+                        Hence r^k . x = x . r^k ( Since the inverse exists)
+                        
+    if x = r ^ c
+       r^k . x = r ^ k. r^ c = r^ (k + c) = r^(c + k) = r^c . r^k 
+       So we say that r^k commutes with every element of D(2n)
+       
+  For the third part that x = r^k is the only non identity which commutes with all of x in D(2n)
+  Let a be in D(2n) such that a x = x a for all x in D(2n)
+  Suppose a = s r ^ c for some integer c with 0 <= c < n
+  
+   s r ^ (c + 1) = s r^c . r = a r = r a = r s r ^ c = s r^ (-1) r ^ (c ) = s r^(c-1) and we know that s r ^(c+1) is 
+   distinct from s r ^ (c-1) unless n = 2 ( But is not by our supposition) so we have a contradiction here.
+   
+   Suppose a = r ^ c for some integer c with 0 < = c < n 
+   Then s r ^ c = s a = a s = r^c s = s r ^(-c )
+   By left cancellation law, we have r^c = r ^(-c) 
+   => r^(2c) = e which suggests c = 0 or k but we know r ^ 0 = 1 is already an identity element
+   
+   Hence we infer that for c = k, r^(k) is the only non identity element of D(2n) which commutes with all x in D(2n) 
+                                           
