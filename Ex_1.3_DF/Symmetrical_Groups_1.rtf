@@ -1,0 +1,97 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25400\viewh13780\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 Symmetric Groups:\
+_______________\
+\
+Let O be any non empty set and let S(O) be the set of all bijections from O to itself.\
+The set S(O) be a group under function composition : o \
+\
+We note that o is a binary operation on S(O) since if Sig: O --> O and T : O ---> O are\
+both bijections, then O o T is also a bijection from O to O.\
+\
+Since function composition is associative in general, o is also associative.\
+\
+The identity of S(O) is the permutation 1 defined by 1(a) = a, for all a in O. For\
+every permutation S there is a 2-sided inverse function Sig ^-1: O ---> O with the \
+following condition satisfied :\
+\
+O o O ^(-1) = (O ^ -1)o (O) = 1 and thus all the group axioms hold for (S(O),o)\
+\
+This group is called the symmetric group on the set O, not the elements of O itself.\
+\
+We next describe the concept of cycle decomposition\
+\
+A cycle is a string of integers which represents the elements of S(n) which cyclically permutes these integers and fixes all other integers. The cycle (a1 a2 \'85.am) is the permutation which sends a(i) to a(I+1) , 1 <= i <= (m-1) .\
+\
+For example : (2 1 3) is the permutation which maps 2 to 1, 1 to 3 and  3 to 2. \
+\
+\
+We first start with S3 which we enumerate \
+\
+Let s stand for sigma the function which permutes the elements of s.\
+\
+Values of s(i)                     Cycle Decomposition of s(i)\
+\'97\'97\'97\'97\'97\'97\'97\'97           ______________________\
+s1(1) = 1, s1(2)=2                      1                 ( all elements fixed as per their original slots)\
+s1(3) = 3\
+\
+s2(1) = 1, s2(2)= 3                   (2 3)\
+s2(3) = 2  \
+\
+s3(1) = 3, s3(2) = 2                  (1 3)\
+s3(3) = 1  \
+\
+s4(1) = 2, s4(2) = 1                  (1 2)\
+s4(3) = 3 \
+\
+s5(1) = 2, s5(2) = 3                  (1 2 3)\
+s5(3) = 1\
+\
+s6(1) = 3, s6(2) = 1.                 ( 1 3 2)\
+s6(3) = 2\
+\
+Thus the order of each of the elements of S3 is [ 1,2,2,2,3,3] \
+\
+\
+What can we say about S4?\
+\
+We say that there are 4! = 24 elements in S4.\
+\
+Enumeration is done as follows :\
+\
+Cycle Decomp              Order\
+___________              _______\
+        1                                 1\
+    ( 1 2).                              2\
+    ( 1 3).                              2\
+    ( 1 4)                               2\
+    ( 2  3)                              2\
+    ( 2. 4)                              2\
+    ( 3. 4)                              2\
+  (1 2  3)                              3\
+  (1 2. 4)                              3\
+  (1 3. 2)                              3\
+  (1 3  4)                              3\
+  (1 4. 2)                              3\
+  (1 4. 3)                              3\
+  (2. 3. 4)                             3\
+  (2. 4. 3)                             3\
+(1 2 3 4)                              4\
+(1 2 4 3)                              4\
+(1 3 4 2)                             4\
+(1 4 3 2)                             4\
+(1 2)(3 4)                            2\
+(1 3)(2 4)                            2\
+(1 4) (2 3)                           2\
+\
+Thus the order of each of the elements of S4 [ 1, 2 , 2 ,2, 2 ,2, 2, 3,3,3,3,3,3,3,3,4,4,4,4,4,2,2,2 ]
+\fs24 \
+\
+\
+\
+ }
