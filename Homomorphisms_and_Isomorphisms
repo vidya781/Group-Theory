@@ -1,0 +1,42 @@
+We get some basic definitions in order and try and solve a few problems based on this ( from Khanna and Bhambri)
+
+Definition: Let <G,*> and <G',o> bet two groups
+A mapping f:G->G' is called a homomorphism if f(a*b) = f(a)of(b) a,b ∊ G
+
+f:G->G'is a homomorphism if f(ab) = f(a)f(b)
+
+f:G->G'is a homomorphism if f(ab) = f(a)f(b)
+
+
+If, in addition, f happens to be one-one,onto we say that f is an isomorphism and in that case G ≅ G'
+Also clearly then f(a1a2....an)= f(a1)f(a2)...f(an) holds under an isomorphism
+An onto homomorphism is called epimorphism
+A one-one homomorphism is called monomorphism
+A homomorphism from a group G to itself is called an endomorphism of G
+An isomorphism from a group G to itself is called an automorphism of G
+If f:G->G' is onto homomorphism then G' is called homomorphic image of G
+
+Let<Z,+> and <E,+> be the groups of integers and even integers
+Define a map f:Z --> E , such that f(x) = 2x for all x ∊ Z
+Then f is well defined as x = y => 2x = 2y => f(x) = f(y)
+That is f is 1-1 is clear 
+f is a homomorphism as f(x+y) = 2(x+y) = 2x + 2y = f(x) + f(y)
+Also f is onto as any even integer 2x would have x as its pre-image
+Hence f is an isomorphism
+
+Let f be a mapping from <Z,+> the group of integers to the group G = {1,-1} under multiplication defined as
+f:Z--> G, s.t
+f(x) = 1 if x is even
+     = -1 if x is odd
+Then f is clearly well defined. We want to know if it is a homomorphism
+Let x,y ∊ Z be any elements
+Case(i) : x,y are both even, then x + y is even and as f(x+y) = 1 , f(x) = 1, f(y) = 1
+We notice f(x+y) = 1 = 1.1 = f(x).f(y)
+
+
+Case(ii) : x,y are both odd, then x + y is even and f(x+y) = +1 = (-1)(-1) = f(x)f(y)
+Case(iii): x is odd, y is even then x + y is odd and f(x+y) = -1 = (-1)(-1) = f(x)f(y)
+and thus in all cases f(x+y) = f(x)f(y)
+Showing thereby that f is a homomorphism. Is it an isomorphism?
+Ontoness is obvious, but f is not 1-1 as f(x) = f(y) does not necessarily mean x=y. Indeed f(2) = f(4) but 2 ≠ 4
+Hence not an isomorphism.
