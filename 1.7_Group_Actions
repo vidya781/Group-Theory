@@ -1,0 +1,60 @@
+We briefly describe the concept of group actions (adapted from D & F)
+
+A group action of a group G on a set A is a map from G X A to A ( written as g.a for all g ∈ G and a ∈ A satisfying the following properties:
+
+1] g1.(g2.a) = (g1 g2).a , for all g1,g2 ∈ G, a ∈ A
+2] 1.a = a, for all a ∈ A
+
+G is a group acting on a set A. The expression g.a will be written simply as ga ( . is not a binary action ) and ga is always a member of A
+
+Now we see that g2.a is an element of A and so by the structure of the statement we say that g1 acts on (g2.a) 
+On the RHS, we have the product g1.g2 which is in G and that acts on the element a
+
+We make the following observations :
+
+Let the group G act on the set A. For each fixed g ∈ G we get a map S(g).  ( Sigma to the subscript g)
+
+S(g) : A -> A
+S(g)(a) = g.a
+
+We prove two important facts:
+
+1] for each fixed g ∈ G, S(g) is a permutation of A
+2] The map from G -> S(A) defined by g -> S(g) is a homomorphism
+
+To show that S(g) is a permutation of A we show that as a set map from A to A it has a 2-sided inverse, namely S(g^(-1))
+
+For all a ∈ A
+(S(g)^(-1) o S(g))(a) = S(g^(-1)(S(g)(a)) ( By definition of the function composition)
+                      = g^(-1).(g.a) ( By definition of S(g^(-1)) and S(g) )
+                      = (g^(-1) g ). a. ( By the property (1) of an action )
+                      = 1. a ( by the property (2) of an action )
+   This proves that S(g^(-1)) o S(g) is the identity map from A to A. Since g was arbitrary we can interchange the roles of g and g^(-1) to 
+   obtain S(g) o S(g^(-1)) to obtain S(g) o S(g^(-1)) is also the identity map on A
+   Thus S(g) has a 2-sided inverse and hence is a permutation A
+   
+   To check the assertion (ii) above P: G -> S(A) be defined by P(g) = S(g)
+   Note that part (1) shows that S(g) is indeed an element of S(A).
+   To see that P is a homomorphism we must prove P(g1g2) = P(g1) o P(g2) ( S(A) is a group under function composition)
+   
+   The permutations P(g1 g2) and P(g1) o P(g2) are equal iff their values are in agreement on every element a ∈ A 
+   For all a ∈ A
+   
+   P(g1g2)(a) = S(g1g2) (a) ( S(g1g2) is the function with the subscript g1g2) ( by defintion of S )
+              = (g1 g2).a  ( by definition of S(g1g2))
+               = g1.(g2.a) ( by property (1) of an action )
+               = S(g1)(S(g2)(a)). ( by definition of S(g1) and S(g2))
+               = (P(g1)oP(g2))(a). ( by definition of P)
+     Thus assertion (ii) above
+     
+  Intuitively, a group action of G on a set A just means that every element g in G acts as a permutation on A in a manner consistent
+  with the group actions in G; assertions (i) and (ii) make this precise.
+  
+  The homomorphism from G to S(A) is called the permutation representation associated to the given action.
+  
+  The process is reversible in the sense that if P: G -> S(A) is any homomorphism from a group G to the symmetric group on a set A, then 
+  the map from G X A to A is defined by g.a = P(g)(a) for all g ∈ G, and all a ∈ A satisfies the properties of a group action of G on A
+  Thus actions of a group G on a set A and the homomorphisms from G into the symmetric group S(A) are in a bijective correspondence
+  
+  More precisely, we have the notion of a left action and right action wherein the group elements appear on the left of the set elements.
+  The set elements on the right are being acted upon.
