@@ -1,0 +1,51 @@
+Problem 1
+=========
+
+Let F be a field. Show that the multiplicative group of non zero elements of F ( denoted by F ^ X ) acts on the set F by g.a = ga
+where g ∈ F ^ x, a ∈ F and ga is the usual product in F of the two field elements
+
+Proof :
+-------
+
+Let g1, g2 ∈ F ^ x 
+Then for any a ∈ F,
+g1.(g2.a) = g1.g2a = g1(g2a) = (g1g2)a = (g1g2) . a
+                                   |
+                                   |
+                               ( associativity of multiplication in F)
+ 
+  Also , for any a ∈ F ^ x , 1.a = 1a = a,
+  Since 1 is the identity of the group F^x
+  And 1(0) = 0 ( which follows from the distributivity ) 
+  So we can say that 1.a = a for all a ∈ F 
+  Therefore the mapping (g,a) -> ga of F ^(x) X F -> F is a group action
+  
+  Problem 2
+  =========
+  
+  Show that the additive group Z acts on itself by z.a = z + a for all z, a ∈ Z
+  
+  Proof :
+  ------
+  
+  Let z1 and z2 be two elements in Z, also let a ∈ Z
+  Thus z1.(z2.a) = z1 + (z2 + a) = (z1 + z2) + a = (z1 + z2).a
+  and 0.a = 0 + a = a
+  Therefor Z acts on itself as stated
+  
+  Problem 3
+ ===========
+ Show that the additive group R acts on the x,y plane R x R by r.(x,y) = (x + ry,y)
+ 
+ Proof:
+ ------
+ 
+ For any r1,r2 in R^2, we have r1.(r2.(x,y)) 
+                              = r1.(r2.(x,y))
+                              = r1(x + r2y,y)
+                              = (x + r2y + r1y,y)
+                              = ( x + (r1 + r2)y, y)
+                              = (r1 + r2).(x,y)
+   And 0.(x,y) = x + 0.y, y
+               = (x,y)
+   Therefore R acts on R^2 in the manner stated above
