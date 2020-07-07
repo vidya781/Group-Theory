@@ -1,0 +1,75 @@
+Problem 4
+=========
+
+Let G be a group acting on a set A and fix some a in A. Show that the following sets are subgroups of G
+a) The kernel of the action
+b) { g ∈ G | ga = a }--This subgroup is called the stabilizer of a in G
+
+Solution :
+--------
+
+Suppose g,h are in the kernel of the action. Then for any b ∈ A,
+(gh).b = g.(h.b) = g.b = b [ Why ? g1(g2.a) = (g1.g2).a for all g1,g2 ∈ G, a ∈ A and 1.a = a for all a ∈ A]
+
+so gh is in the kernel, and the kernel is closed under group operation.
+Moreover, if g is in the kernel then
+b = 1.b = (g^-1 g).b = g^-1.(g.b) = g^-1 . b
+so g^-1 is in the kernel 
+
+Therefore the kernel of the group action is a nonempty subset of G which is closed under the binary action of G 
+and which is closed under inverses so the kernel is a subgroup of G
+
+b) { g ∈ G | ga = a } ( called the stabilizer of a in G }
+
+Proof:
+------
+The stabilizer of a is nonempty since 1 is a member. Now let g, h be any members of the stabilizer 
+Then, (gh).a = g.(h.a) = g.a = a,
+so the stabilizer is closed under the group action. It is also closed under inverses since
+a = 1.a = (g^-1 g).a = g^-1.(g.a) = g^-1.a
+Therefore the stabilizer is a subgroup of G
+
+
+Problem 5
+=========
+
+Prove that the kernel of an action of the group G on the set A is the same as the kernel of the corresponding permutation representation 
+G -> SA
+
+Proof:
+-----
+
+Let p: G->SA be the permutation representation of the group actionon A, so that for g ∈ G and a ∈ A,
+p(g)(a) = g.a
+If g ∈ ker p, then p(g) = 1, where 1 is the identity permutation on A
+Then g.a = a for all a ∈ A, and g is in the kernel of the action.
+Conversely, if g is in the kernel of the action, then g.a = a for all a ∈ A, so that p(g) = 1 and g ∈ ker p.
+Therefore the kernel of the group action and the kernel fo the corresponding permutation represenetation are the same.
+
+Problem 6
+=========
+
+Prove that a group G acts faithfully on a set A iff the kernel of the action is the set consisting only of the identity.
+
+Proof:
+------
+
+If G acts on a set B and distinct elements of G induce distinct permutations of B, the action is said to be faithful.
+A faithful action is therefore one in which the associated permutation representation is injective.
+
+The kernel of the action of G on B is defined to be { g ∈ G | gb = b for all b ∈ B }, namely the elements of G which fix
+all the elements of B. For the trivial action, the kernel of teh action is all of G and this action is not faithful when |G| > 1
+
+Proof: We attempt a proof by comparison.
+
+First, let us suppose that G acts faithfully on A and let g be an element in the kernel of the action..
+Then g.a = a for all a ∈ A. However, 1.a = a for all a ∈ A, so the elements 1 and g induce the same permutation on A. Since G
+acts faithfully , this means that g = 1, so that the kernel of the action is the set {1}.
+
+For the converse, suppose that the kernel of the action is the set {1}. Pick two elements g and h in G
+and suppose that g and h induce the same permutation on A. Then for any a ∈ A, g.a = h.a
+But then
+a = (g^-1g).a = g^-1.(g.a) = g^-1.(h.a) = (g^-1 h).a
+Therefore g^-1 h is in the kernel of the action, so g^-1 h = 1
+This implies that g = h , so that distinct elements in G must induce distinct permutations on A.
+This shows that G acts faithfully on A.
