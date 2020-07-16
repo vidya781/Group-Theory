@@ -1,0 +1,59 @@
+Problem 12
+---------
+
+Assume n is an even positive integer and show that D(2n) acts on the set consisting of pairs of opposite vertices of a regular n-gon
+Find the kernel of this action ( label the vertices as usual)
+
+Solution:
+---------
+
+Fix an even positive integer n. The set of pairs of opposite vertices of a regualr n-gon, labeled in the usual way, is the set P = { P1, P2,....Pn/2}
+where Pk = {k,n/2 + k}
+
+D(2n) acts on P by x.P(k) = P(l) where P(l) is the set of images of the vertices in P(k) under the symmetry x.
+For example, in D(8), sr.{2,6} = {7,3} because sr maps vertex 2 to vertex 7 and vertex 6 to vertex 3.
+
+Let x,y be in D(2n). It is clear by the definition of action that x.(y.P(k))= (xy).P(k) 
+and that 1.P(k) = P(k). So definitely this is a group action.
+The only symmetry in D(2n) which fixes all vertices is the identity 1.
+However, since the order of vertices in each pair does not matter , any symmetry which only sends vertices to their opposites will also fix
+pairs of vertices.
+The only symmetry which does this is r ^(n/2). There is no symmetry which fixes only some vertices and sends all others 
+to their opposite vertices, so the kernel of teh action is just the set {1, r^(n/2)}
+
+Problem 13
+----------
+
+Find the kernel of the left regular action
+
+Solution :
+--------
+Let G be a group. The kernel of the left regular action is the set { g in G | gh = h for all h in G }
+By uniqueness of the identity , it is clear that this set is simply { 1 }.
+Therefore the left regular action is always faithful
+
+Problem 14
+----------
+
+Let G be a group and let A = G. Show that if G is non-abelian then the maps defined by g.a = ag for all g,a in G do not satisfy the axioms of a 
+left group action of G on itself
+
+Proof :
+------
+
+Since G is non-abelian, there exists g1, g2 in G such that g1 g2 =/= g2 g1
+Then g1 . (g2 . a) = a g2 g1 but (g1 g2). a = a g1 g2. If a g2 g1 = a g1 g2 then the cancellation law gives g2 g1 = g1 g2 which is a contradiction
+Therefore this map does not define a left group action
+
+Problem 15
+----------
+
+Let G be any group and let A = G. Show that the maps defined by g.a = ag ^-1 for all g,a in G do satisfy the axioms of a (left) group action of G 
+on itself
+
+Proof : Let g1, g2 , a in G be arbitrary. Then
+
+g1 . (g2 . a) = g1.(a g2^-1) = a g2^-1 g1 ^-1 = a(g1 g2)^(-1) = (g1 g2).a
+and 1.a = a1^-1 = a1 = a and hence this map defines a group action
+
+Adapted from Greg Kikola 
