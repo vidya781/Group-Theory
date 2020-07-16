@@ -1,0 +1,82 @@
+Problem 16
+----------
+
+Let G be any group and let A = G. Show that the maps defined by g.a = gag^-1 for all g,a in G do satisfy the axioms of a (left) group action 
+( this action of G on itself is called conjugation )
+
+Proof : 
+------
+
+For any g1, g2 , a in G we have
+
+g1.(g2.a) = g1.(g2 a g2^-1) = g1 g2 a g2^-1 g1^-1 = (g1 g2) a (g1 g2)^-1 = (g1 g2).a
+and 1.a = 1a1 = a and so this mapping defines a group action
+
+
+Problem 17
+----------
+
+Let G be a group and let G act on itself by left conjugation, so each g in G mapd G to G by
+x --> gxg^-1
+
+For fixed g in G, prove that conjugation by g is an isomorphism from G onto itself( ie; is an atomorphism of G) . Deduce that x and gxg^-1 have the same order 
+for all x in G and that for any subset A of G, |A| = |gAg^-1|( Here a A g^-1 = {gag^-1 | a in A})
+
+Proof: Fix a g in G and let P:G-> G denote the map x -> g x g^-1 Then for any x1, x2 in G we have
+P(x1 x2) = g x1 x2 g^-1 = (g x1 g^-1)(g2 x2 g^-1) = P(x1) P(x2)
+
+so P is a homomorphism
+
+Next suppose that P(x1) = P(x2). Then g x1 g^-1 = g x2 g^-1 and multiplying both sides of this equation on the left by g ^-1 and on the right by g gives x1 = x2 
+so that P is injective
+
+Now let y in G be arbitrary. Then x = g^-1 y g is such that P(x) = y, so P is surjective. Therefore P is an automorphism
+
+Since isomorphisms preserve order, we see that each element x in G has the same order as its conjugate g x g ^-1. Moreover , if A is a subset of G , then teh
+restriction of P to A P|A: A->a A g^-1 , is still a bijection , so |A| = | g A g^-1|
+
+Problem 18
+----------
+
+Let H be a group acting on a set A. Prove that the relation. ~ on A defined by a ~ b iff a = hb for some h in H
+is an equivalence relation. ( for each x in A, the equivalence classes of x under ~ is called the orbit of x under the action of H. The orbits under the action of H 
+partition the set A )
+
+Proof :
+------
+
+Since a = 1a we have a ~ a. And if a = hb for h in H, then
+h^-1 a = h^-1(hb) = (h^-1h)b = b, so a ~ b => b ~ a
+Lastly, suppose a ~ b and b ~ c and let h1, h2 in H be such that a = h1b and b = h2c.
+Then a = h1(h2c) = (h1h2)c and a ~ c. Hence ~ is an equivalence relation.
+
+Problem 19
+----------
+
+Let H be a subgroup of the finite group G and let H act on G(here A = G) by left multiplication.
+Let x in G and let O be the orbit of x under the action of H. Prove that the map
+H -> O defined by h -> hx is a bijection( hence all orbits have cardinality |H|). from this and predceding exercises deduce the Lagrange's Theorem:
+
+if G is a finite group and H is a subgroup of G then |H| divides |G|
+
+Proof :
+------
+let P: H-> O denote the map h -> hx. Suppose P(h) = P(k) for h,k in H
+Then hx = kx and right cancellation implies that h = k, so that P is injective. And P is surjective by definition ( y in O means that there is h in H such that 
+hx = y). Therefore P is a bijection and |H| = |O\
+We know that orbits under the action of H partition G. Each equivalence class O has cardinality |H| , so |G| = n|H| where n is the number of orbits. 
+Hence |H| divides |G|
+
+
+Problem 20
+----------
+
+Show that the group of rigid motions of a tetrahderon is isomorphic to a subgroup of S4
+
+Proof : 
+-----
+
+Call the group of rigid motions of the tetrahedron G. Number each vertex and let A denote the set {1, 2, 3, 4}. Then each rigid motion α ∈ G induces a permutation σα ∈ S4 of A. G acts on A via the map αi = σα(i).
+Since each distinct α ∈ G permutes the vertices in a different way, we get an injective homomorphism φ:G→S4 givenby φ(α)=σα.
+Then φ(G) is a subgroup of S4, and by simply restricting the codomain of φ we have an isomorphism from G to this subgroup of S4.
+
