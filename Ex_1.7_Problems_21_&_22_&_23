@@ -1,0 +1,56 @@
+Problem 21
+----------
+
+Show that the group of rigid motions of a cube is isomorphic to S4.
+
+Proof:
+--------
+
+Again let G denote the group of rigid motions and let A = {1, 2, 3, 4}, where each i ∈ A corresponds to a pair of opposing vertices on a cube. 
+Each α ∈ G sends each pair of opposing vertices to a new pair of opposing vertices. Therefore G acts on A.
+Consider the homomorphism φ: G → S4 given by φ(α)(i) = αi.
+Then φ is injective since each distinct rigid motion α ∈ G gives rise to a different permutation of A. 
+From an earlier Exercise we know that |G| = 24 = |S4|, so φ is in fact an isomorphism.
+
+Problem 22
+---------
+
+Show that the group of rigid motions of an octahedron is isomorphic to S4. Deduce that the groups of rigid motions of a cube and an octahedron are isomorphic.
+
+Proof. 
+-------
+
+Number each pair of opposing faces of the octahedron 1,2,3,4. 
+Let G be the group of rigid motions of the octahedron and let A = {1, 2, 3, 4}. 
+Each α ∈ G sends each pair of opposing faces to a new pair of opposing faces, so G acts on A.
+As in the previous exercise, we see that the homomorphism φ: G → S4 given by φ(α)(i) = αi.
+is injective. By Exercise 1.2.11 we have |G| = 24 = |S4|, so φ is an isomorphism. 
+From this and the previous exercise, we see that the groups of rigid motions of the cube and the octahedron are isomorphic.
+
+Problem 23
+----------
+
+Explain why the action of the group of rigid motions of a cube on the set of three pairs of opposite faces is not faithful. Find the kernel of this action.
+
+Proof:
+------
+
+The group of rigid motions of a cube has order 24 but the permutations on the set of pairs of opposite faces has order |S3| = 6. 
+Therefore the action cannot be faithful.
+Construct a line through the center of each pair of opposite faces. 
+Then a 180◦ rotation about each of these lines will send each pair of opposite faces to itself. 
+These are the only rotations that fix pairs of opposing faces, so the kernel of the action consists of these three 180◦ rotations 
+along with the identity transformation.
+
+
+
+
+
+
+
+
+
+
+
+
+
